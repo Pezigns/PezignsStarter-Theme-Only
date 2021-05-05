@@ -1,0 +1,59 @@
+{
+  "name": "pezigns/starter",
+  "authors": [
+    {
+      "name": "Andrew Lopez",
+      "email": "Andrew.lopez@pezigns.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.9.5",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+        },
+        "require": {
+          "philippbaschke/acf-pro-installer": "^1.0",
+          "composer/installers": "^1.0"
+        }
+      }
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "wpackagist-plugin/wordpress-seo": "^16.1.1",
+    "wpackagist-plugin/wordfence": "^7.2",
+    "wpackagist-plugin/classic-editor": "^1.4",
+    "wpackagist-plugin/codepress-admin-columns": "^4.2",
+    "wpackagist-plugin/wp-optimize": "^3.1.8",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.9.5",
+    "wpackagist-plugin/show-current-template":"^0.4.5",
+    "wpackagist-plugin/wp-migrate-db": "^1.0.2",
+    "wp-premium/gravityforms": "^2.3.2",
+    "wpackagist-plugin/akismet": "^4.0.8",
+    "monolog/monolog": "^1.24",
+    "wpackagist-plugin/genesis-blocks":"^1.2.3"
+  },
+  "require-dev": {
+    "phpmd/phpmd": "^2.6.0"
+  }
+}

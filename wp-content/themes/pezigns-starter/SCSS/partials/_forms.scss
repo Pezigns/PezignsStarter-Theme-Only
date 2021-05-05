@@ -1,0 +1,180 @@
+$primary: #6cab36 !default;
+$darkGray: #A9A9A9 !default;
+
+textarea, .woocommerce form .form-row textarea {
+  @extend .textarea;
+  background-color: #eee !important;
+  border: medium none;
+}
+
+input {
+  &:not([type=radio],[type=checkbox]){
+    @extend .input;
+    max-width: unset;
+  }
+}
+
+.gform_wrapper {
+  padding-bottom: 2rem;
+
+  form {
+    ol,
+    ul.gform_fields {
+      list-style: none;
+      margin: 1rem 0;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .gfield {
+      @extend .field;
+    }
+
+    .gfield_label {
+      @extend .label;
+    }
+
+    .ginput_container {
+      @extend .control;
+
+      input:not([type="checkbox"]):not([type="radio"]) {
+        @extend .input;
+        @extend .is-small;
+      }
+
+      label {
+        @extend .help;
+      }
+
+      .address_country {
+        @extend .select;
+        @extend .is-fullwidth;
+
+        &::after {
+          top: 3.025rem !important;
+        }
+
+        vertical-align: inherit;
+        height: auto !important;
+      }
+    }
+
+    .ginput_complex {
+      &.ginput_container_name {
+        @extend .field;
+        @extend .is-grouped;
+
+        span {
+          @extend .control;
+          @extend .is-expanded;
+        }
+      }
+    }
+
+    .validation_error {
+      @extend .help;
+      @extend .is-danger;
+    }
+
+    .gfield_error {
+      input {
+        @extend .is-danger;
+      }
+
+      .validation_message {
+        @extend .help;
+        @extend .is-danger;
+      }
+
+      .ginput_container {
+        label {
+          @extend .is-danger;
+        }
+      }
+    }
+
+    .gf_page_steps {
+      @extend .columns;
+      padding: 1rem;
+
+      .gf_step {
+        @extend .column;
+
+        &.gf_step_active {
+          font-weight: bold;
+          color: $primary;
+        }
+
+        &.gf_step_completed {
+          font-weight: bold !important;
+          color: $darkGray !important;
+        }
+      }
+    }
+
+    .gfield_checkbox {
+      margin-left: 0 !important;
+
+      li {
+        @extend .checkbox;
+
+        label {
+          margin-left: .25rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .radio{
+      margin-left: 0 !important;
+    }
+    .gfield_radio {
+      margin-left: 0 !important;
+      .radio + li {
+        margin-left: 0 !important;
+      }
+      li + .radio {
+        margin-left: 0 !important;
+      }
+      li + li{
+        margin-left: 0 !important;
+      }
+    }
+      li {
+        @extend .radio;
+        @extend .field;
+        @extend .is-grouped;
+
+        label {
+          margin-left: .25rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .gfield_required {
+      @extend .is-danger;
+    }
+
+    .button {
+      @extend .is-primary;
+
+      &.gform_previous_button {
+        @extend .is-outlined;
+      }
+    }
+
+  }
+
+  .mc4wp-form {
+    @extend .form !optional;
+    .mc4wp-error p{
+      @extend .is-danger;
+    }
+  }
+
+  .woocommerce-ordering {
+    @extend .select;
+  }

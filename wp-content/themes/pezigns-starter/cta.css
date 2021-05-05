@@ -1,0 +1,115 @@
+.mega-block-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.mega-block-container * {
+  position: relative;
+  z-index: 1;
+}
+.mega-block-container .mega-block-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  min-height: 100%;
+}
+.mega-block-container .mega-block-inner {
+  position: relative;
+  padding: 5%;
+}
+
+.cta-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.cta-container * {
+  position: relative;
+  z-index: 1;
+}
+.cta-container .cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0px;
+}
+
+.count-down-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  width: 100%;
+}
+.count-down-container * {
+  position: relative;
+  z-index: 1;
+}
+.count-down-container .count-down-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0px;
+}
+.count-down-container .count-down-inner {
+  padding: 0 15%;
+}
+.count-down-container #clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  min-width: 100%;
+}
+.count-down-container #clockdiv div > span:after {
+  opacity: 1;
+  border-radius: 50%;
+  transform: translateY(10px);
+  background-color: #fff !important;
+  height: 10px;
+  width: 10px;
+  content: " " !important;
+  position: absolute;
+  top: 40%;
+  margin: auto;
+  right: -15%;
+}
+.count-down-container #clockdiv > div {
+  opacity: 0.5;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 23%;
+}
+.count-down-container #clockdiv div > span {
+  font-size: 80px !important;
+  font-weight: bold !important;
+  display: block !important;
+  margin-bottom: -30px !important;
+  position: relative !important;
+  margin-right: 50px !important;
+  text-shadow: 0 5px 16px rgba(0, 0, 0, 0.4) !important;
+}
+.count-down-container #clockdiv div:nth-last-child(1) span:after {
+  display: none !important;
+}
+.count-down-container .smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+.count-down-container #clockdiv span.day {
+  font-size: 80px !important;
+  font-weight: bold !important;
+  display: block !important;
+  margin-bottom: -30px !important;
+  position: relative !important;
+  margin-right: 50px !important;
+  text-shadow: 0 5px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+/*# sourceMappingURL=cta.css.map */

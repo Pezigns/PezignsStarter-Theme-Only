@@ -1,0 +1,10 @@
+//body:not(.home) .content-inner{
+//  padding: 0 !important;
+//  margin: 0 !important;
+//}
+main {
+  @extend .column;
+}
+aside {
+  @extend .column, .is-one-quarter;
+}

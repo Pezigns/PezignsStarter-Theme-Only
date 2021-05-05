@@ -1,0 +1,57 @@
+/*
+Theme Name: Pezigns Starter
+Author: Pezigns
+Author URI: http://Pezigns.com/
+template: genesis
+Text Domain: Pezigns_Starter
+*/
+// Main Sass Stylesheet Theme Structure
+  //Sass
+  //|
+  //|-- modules/              # Common modules
+  //|   |-- _all.scss         # Include to get all modules
+  //|   |-- _utility.scss     # Module name
+  //|   |-- _colors.scss      # Etc...
+  //|   ...
+  //|
+  //|-- partials/             # Partials
+  //|   |-- _variables.sass   # global project variables
+  //|   |-- _base.sass        # imports for all mixins
+  //|   |-- _buttons.scss     # buttons
+  //|   |-- _figures.scss     # figures
+  //|   |-- _grids.scss       # grids
+  //|   |-- _typography.scss  # typography
+  //|   |-- _reset.scss       # reset
+  //|   ...
+  //|
+  //|-- extrernal/               # CSS or Sass from other projects
+  //|   |-- _colorpicker.scss
+  //|   |-- _jquery.ui.core.scss
+  //|   ...
+  //|
+  //`-- style.scss            # primary Sass file
+
+
+// Modules and Variables
+@import "../bulma/sass/utilities/initial-variables";
+@import "../bulma/sass/utilities/functions";
+@import "partials/variables";
+@import "../bulma/bulma.sass";
+@import "partials/base";
+
+//Modules
+@import "modules/blocks";
+@import "modules/woocommerce";
+
+// Partials
+@import "partials/reset";
+@import "partials/typography";
+@import "partials/forms";
+@import "partials/buttons";
+@import "partials/figures";
+@import "partials/grids";
+// ...
+
+// Third-party
+@import "external/colorpicker";
+@import "external/jquery.ui.core";

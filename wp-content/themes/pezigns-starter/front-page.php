@@ -1,0 +1,7 @@
+<?php
+
+
+
+
+// Initialize Genesis.
+genesis();

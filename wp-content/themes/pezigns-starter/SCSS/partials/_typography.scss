@@ -1,0 +1,45 @@
+h1{
+   font-size:$size-1 !important;
+   font-weight: $weight-bold;
+ }
+h2{
+  font-size:$size-2 !important;
+  font-weight: $weight-bold;
+}
+h3{
+  font-size:$size-3 !important;
+  font-weight: $weight-bold;
+}
+h4{
+  font-size:$size-4 !important;
+  font-weight: $weight-bold;
+}
+h5{
+  font-size:$size-5 !important;
+  font-weight: $weight-bold;
+}
+h6{
+  font-size:$size-6 !important;
+  font-weight: $weight-bold;
+}
+p{
+  font-size: $size-paragraph;
+  font-weight: normal;
+  margin-bottom: 0 !important;
+}
+.content {
+    p{
+      &:not(:last-child){
+        margin: 0 !important;
+      }
+    }
+  article{
+    .entry-content{
+      p{
+        &:not(:last-child){
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}

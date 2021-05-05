@@ -1,0 +1,10 @@
+//.wp-block-button__link {
+//  @extend .button, .is-primary;
+//  padding: inherit !important;
+//}
+.is-style-theme-style {
+  .wp-block-button__link {
+    @extend .button, .is-primary !optional;
+  }
+}
+
